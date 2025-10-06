@@ -1,1 +1,89 @@
+# ============================================================
+# templates.yaml
+# Plantillas de prompts - Proyecto "Idea Alquímica"
+# Autor: Lucas Leonel Montenegro Burgos
+# Fecha: 2025-10-06
+# Descripción: Contiene ejemplos de prompts baseline y optimizados
+# ============================================================
+
+text_prompts:
+  baseline:
+    description: >
+      Prompt simple sin estructura avanzada.
+      Sirve como punto de comparación frente al fast prompting.
+    prompt: |
+      Genera un slogan corto para una tienda online de temática cyberpunk
+      que vende accesorios tecnológicos únicos.
+
+  fast_prompt:
+    description: >
+      Prompt optimizado con técnicas de Fast Prompting:
+      - Rol
+      - Contexto
+      - Restricciones
+      - Formato de salida
+      - Autocheck
+    prompt: |
+      [ROL]: Eres un experto en branding futurista y marketing cyberpunk.
+
+      [CONTEXTO]: Trabajas para 'Art-Synt', una tienda digital ambientada
+      en un universo futurista donde la tecnología y el arte se fusionan.
+      Tu objetivo es crear un slogan potente y estéticamente coherente
+      con la identidad visual cyberpunk.
+
+      [RESTRICCIONES]:
+      - Máximo 12 palabras.
+      - Tono evocador, artístico y moderno.
+      - Evitar términos genéricos como "innovación", "tecnología" o "futuro".
+      - Mantener coherencia visual con estética neón y urbana.
+
+      [FORMATO DE SALIDA]: JSON con campos:
+      {
+        "slogan": "...",
+        "tono": "...",
+        "validacion": "✅ o ❌ (si cumple con el estilo y extensión)"
+      }
+
+      [SELF-CHECK]:
+      Antes de devolver el resultado, verifica que el slogan cumpla las
+      restricciones y la validación de estilo.
+
+image_prompts:
+  art_synt_poster:
+    description: >
+      Prompt para generar una imagen coherente con la identidad visual
+      de 'Art-Synt' (tienda digital de estética cyberpunk).
+    prompt: |
+      Afiche publicitario estilo cyberpunk para 'Art-Synt'.
+      Escenario urbano con luces de neón, reflejos en el suelo mojado,
+      hologramas publicitarios, tipografía futurista, y un accesorio tecnológico
+      en primer plano. Paleta fría (azules y violetas) con acentos magenta.
+      Iluminación intensa y atmósfera lluviosa.
+
+  concept_art:
+    description: >
+      Prompt para generar arte conceptual dentro del mismo universo visual.
+    prompt: |
+      Ilustración conceptual estilo cyberpunk. Escena nocturna en una ciudad
+      futurista con rascacielos, neones, drones y personas con implantes.
+      Estilo detallado, enfoque cinematográfico, contraste alto, estética oscura
+      con tonos magenta, azul y negro. Inspirado en Blade Runner y Edgerunners.
+
+  logo_design:
+    description: >
+      Prompt de IA para creación de logo de 'Art-Synt' (formato imagen o vector).
+    prompt: |
+      Diseño de logo minimalista estilo cyberpunk para 'Art-Synt'.
+      Tipografía geométrica futurista, tonos metálicos y neón magenta.
+      Fondo oscuro. Incluir un símbolo alusivo a la fusión entre arte y tecnología.
+
+metadata:
+  author: "Lucas Leonel Montenegro Burgos"
+  project: "Idea Alquímica: Tejiendo el Futuro con Prompt Engineering"
+  version: "1.0"
+  last_update: "2025-10-06"
+  notes: >
+    Las plantillas están diseñadas para ser reutilizables en diferentes herramientas
+    de IA generativa. Se recomienda conservar la estructura YAML para facilitar
+    su carga en scripts Python o notebooks.
 
