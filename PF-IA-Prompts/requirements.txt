@@ -1,0 +1,27 @@
+# ============================================================
+# requirements.txt
+# Dependencias del proyecto "Idea Alquímica"
+# Autor: Lucas Leonel Montenegro Burgos
+# Fecha: 2025-10-06
+# ============================================================
+
+# Núcleo de Python
+python>=3.10
+
+# Librerías esenciales
+openai>=1.0.0
+pyyaml>=6.0
+jupyter>=1.0.0
+
+# Utilidades generales
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Soporte para visualización y análisis
+matplotlib>=3.8.0
+
+# Control de entorno y compatibilidad
+requests>=2.31.0
+
+# Recomendado para reproducibilidad en notebooks
+ipykernel>=6.29.0
