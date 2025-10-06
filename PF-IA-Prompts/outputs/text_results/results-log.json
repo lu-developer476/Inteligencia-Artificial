@@ -1,0 +1,35 @@
+{
+    "timestamp": "2025-10-06T22:45:00",
+    "baseline": {
+        "prompt": "Genera un slogan corto para una tienda online de temática cyberpunk que vende accesorios tecnológicos únicos.",
+        "output": "Tu estética cyberpunk comienza aquí.",
+        "cost": {
+            "tokens": 33,
+            "cost_usd": 0.0165
+        },
+        "quality": {
+            "puntaje": "2/3",
+            "detalle": {
+                "longitud_adecuada": true,
+                "sin_cliches": true,
+                "estilo_cyberpunk": false
+            }
+        }
+    },
+    "fast_prompting": {
+        "prompt": "[ROL]: Eres un experto en branding futurista y marketing cyberpunk. [CONTEXTO]: Trabajas para 'Art-Synt'...",
+        "output": "Art-Synt: Tecnología con alma futurista.",
+        "cost": {
+            "tokens": 72,
+            "cost_usd": 0.036
+        },
+        "quality": {
+            "puntaje": "3/3",
+            "detalle": {
+                "longitud_adecuada": true,
+                "sin_cliches": true,
+                "estilo_cyberpunk": true
+            }
+        }
+    }
+}
